@@ -48,6 +48,7 @@ const SpeechToText = () => {
         recognition.stop();
       }
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const onStart = () => {

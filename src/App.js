@@ -3,7 +3,6 @@ import React, {
   useState,
   useEffect
 } from 'react';
-import { cx, css } from '@emotion/css'
 import './css/home.css';
 function App() {
 
@@ -15,7 +14,7 @@ function App() {
     if (!gptAPI) {
       setGptAPI(gptAPIKey);
     }
-  }, []);
+  }, [gptAPI]);
   if ('webkitSpeechRecognition' in window) {
     return (
       <>
